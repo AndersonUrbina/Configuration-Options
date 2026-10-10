@@ -39,11 +39,11 @@ In Development, `appsettings.Development.json` overrides `EnableComments` to `tr
 
 ### Development — comments enabled
 
-<img src="screenshots/DE.png" alt="MicroBlog running with the Leave Comment form visible.">
+<img src="Screenshots/DE.png" alt="MicroBlog running with the Leave Comment form visible.">
 
 ### Default configuration — comments disabled
 
-<img src="screenshots/PE.png" alt="MicroBlog running with the Leave Comment form hidden.">
+<img src="Screenshots/PE.png" alt="MicroBlog running with the Leave Comment form hidden.">
 
 ## Technologies
 
