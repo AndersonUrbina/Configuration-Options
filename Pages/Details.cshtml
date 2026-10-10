@@ -1,0 +1,36 @@
+﻿@page "{Id:int}"
+@using Microsoft.Extensions.Options
+@using Configuration_Options
+@inject IOptions<SiteOptions> SiteOptions
+
+@model Configuration_Options.Pages.DetailsModel
+@{
+	ViewData["Title"] = "Details page";
+}
+
+<section id="posts">
+    <div class="details">
+        <h3 class="card-title">@Model.Post.title</h3>
+        <p class="card-p"><strong>Author:</strong> @Model.Post.Author</p>
+        <p class="card-p"><strong>Date:</strong> @Model.Post.CreatedUtc</p>
+        <p class="card-body">@Model.Post.Body</p>
+    </div>
+</section>
+<br>
+@if (SiteOptions.Value.EnableComments)
+{
+    <section>
+        <div class="comment-form">
+
+            <h3>Leave a Comment</h3>
+            <form method="post" asp-page-handler="AddComment">
+                <label for="Name">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required />
+                <label for="body">Comment:</label>
+                <textarea id="body" name="body" class="form-control" rows="4" required></textarea>
+                <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+}
