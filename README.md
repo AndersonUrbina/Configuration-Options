@@ -1,4 +1,4 @@
-# MicroBlog — Configuration with SiteOptions
+# MicroBlog â€” Configuration with SiteOptions
 
 ## Overview
 
@@ -37,13 +37,13 @@ In Development, `appsettings.Development.json` overrides `EnableComments` to `tr
 
 ## Screenshots
 
-### Development — comments enabled
+### Development â€” comments enabled
 
-<img src="screenshots/DE.png" alt="MicroBlog running with the Leave Comment form visible.">
+<img src="screenshots/DE.png">
 
-### Default configuration — comments disabled
+### Default configuration â€” comments disabled
 
-<img src="screenshots/PE.png" alt="MicroBlog running with the Leave Comment form hidden.">
+<img src="screenshots/PE.png">
 
 ## Technologies
 
